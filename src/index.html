@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link href="/dist/output.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            * {
+                font-family: 'Poppins' ,'Open Sans', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container mx-auto min-h-screen flex items-center ">
+            <!-- login container -->
+                <div class="flex rounded-lg shadow-2xl sm:w-10/12 max-w-2xl mx-auto border border-gray-200">
+                    <!-- image -->
+                    <div class="w-1/2 hidden sm:block bg-cover rounded-l-lg" style="background-image: url(https://images.unsplash.com/photo-1594911772125-07fc7a2d8d9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);">
+                    </div>  
+                    <!-- form -->
+                    <div class="sm:w-1/2 p-8">
+                        <h2 class="font-bold text-xl">Login</h2>
+                        <p class="text-sm mt-2">Log in to your account to continue</p>
+                        <form action="#" class="flex flex-col gap-5">
+                            <input class="p-1 mt-4 rounded-xl border" type="email" name="email" placeholder="Email" required>
+                            <input class="p-1 rounded-xl w-full border" type="password" name="password" placeholder="Password" minlength="8" required>
+                            <div class="flex items-center gap-1">
+                                <input type="checkbox" id="keep-login"> <label for="keep-login" class="text-sm text-gray-500">Keep me logged in</label>
+                            </div>
+                            <button class="bg-black text-white py-2">Log In</button>
+                        </form>
+                        <a href="#" class="text-xs block mt-3 text-gray-500">Forgot your password?</a>
+                        <div class="w-full border-b-[1px] border-gray-500 my-2"></div>
+                        <div class="flex justify-between w-full gap-3">
+                            <p class="text-xs text-gray-500">Not joined yet?</p>
+                            <a class="text-xs text-gray-500 font-bold" href="#">Create your account here</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+</html>
